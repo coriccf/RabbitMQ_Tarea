@@ -1,0 +1,10 @@
+version: "2.4"
+
+services:
+  school:
+    image: school:1.0.2
+    mem_limit: 300m
+    ports:
+    - "8080:8080"
+    environment:
+      - "URL_DATABASE=${DATABASE}"
