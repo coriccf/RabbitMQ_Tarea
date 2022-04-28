@@ -2,27 +2,66 @@
 GET http://ucb.edu.bo:8080/v1/api/nota
 Content-Type: application/json
 
-####
-GET http://localhost:8080/v1/api/students/1
+
+#### obtener estudiante 3
+GET http://localhost:8080/v1/api/students/3
 Content-Type: application/json
 
-
-####
+####Crear estudiate
 POST http://localhost:8080/v1/api/students
 Content-Type: application/json
 
 {
-  "name": "Joel",
-  "lastName": "Rojas",
-  "email": "jrojas@gmail.com"
+  "name": "Corina",
+  "lastName": "Colque Flores",
+  "email": "corina.colque@gmaail.com"
 }
 
-
-#####
+####Lista de estudiantes
 GET http://localhost:8080/v1/api/students/paginate?page=2&size=20
 Content-Type: application/json
 
-#####
-GET http://localhost:8081/v1/api/students/paginate?page=2&size=20
+#####Paginacion
+GET http://localhost:8080/v1/api/students/paginate?page=1&size=3
 Content-Type: application/json
 
+
+### SUBJECT
+POST http://localhost:8080/v1/api/subject
+Content-Type: application/json
+
+{
+  "name": "Arquitectura de sistemas ",
+  "semester": 1,
+  "credits": 5,
+  "status": 0
+}
+
+
+###Obtener subject1
+GET http://localhost:8080/v1/api/subject/1
+Content-Type: application/json
+
+#### Lista subject
+GET http://localhost:8080/v1/api/subject
+Content-Type: application/json
+
+
+
+####ASSING TEACHER
+POST http://localhost:8080/v1/api/teacher
+Content-Type: application/json
+
+{
+  "name": "Joel Rojas",
+  "email": "Jrojas@ucb.edu.bo"
+
+}
+
+####Obtener teacher 1
+GET http://localhost:8080/v1/api/teacher/1
+Content-Type: application/json
+
+####Listar teacher
+GET http://localhost:8080/v1/api/teacher
+Content-Type: application/json

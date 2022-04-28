@@ -1,0 +1,26 @@
+###POST http://localhost:8080/v1/api/consumer
+###Content-Type: application/json
+
+###{
+ ### "message": "Enviando mensaje a la cola"
+
+####}
+###DIRECT exchange
+
+POST http://localhost:8080/v1/api/publisher/direct/student
+Content-Type: application/json
+
+{
+  "name": "Corina",
+  "lastName": "Colque Flores",
+  "email": "corina.colque@gmaail.com"
+}
+###
+POST http://localhost:8080/v1/api/publisher/direct/student
+Content-Type: application/json
+
+{
+"name": "Daniela",
+"lastName": "Mendoza Mendoza",
+"email": "Dmendoza@gmail.com"
+}

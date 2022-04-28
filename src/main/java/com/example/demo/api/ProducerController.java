@@ -1,4 +1,4 @@
-package com.example.demo.api;
+/*package com.example.demo.api;
 
 import com.example.demo.config.RabbitMqConfig;
 import com.example.demo.dto.MessageDto;
@@ -15,6 +15,8 @@ import java.util.UUID;
 public class ProducerController {
     //como se va enviar ese mensaje, se tienen que crear esa clase que reciba el mensaje
     //Se va a crear MessageDto
+
+    //Se va apoder crear las colas
     @Autowired
     private RabbitTemplate template;
 
@@ -28,3 +30,4 @@ public class ProducerController {
         return "Mensaje enviado";
     }
 }
+*/
