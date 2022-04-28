@@ -1,0 +1,7 @@
+POST http://localhost:8080/v1/api/consumer
+Content-Type: application/json
+
+{
+  "message": "Enviando mensaje a la cola"
+
+}
