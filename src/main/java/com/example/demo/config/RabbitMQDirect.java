@@ -11,9 +11,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RabbitMQDirect {
 
-    public static final String EXCHANGE_DIRECT = "text_exchange";
+    public static final String EXCHANGE_DIRECT = "exchange_direct";
     public static final String ROUTING_STUDENT_KEY = "routing_Student_key";
-
 
     @Bean
     Queue queueStudent(){

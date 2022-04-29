@@ -16,11 +16,23 @@ Content-Type: application/json
   "email": "corina.colque@gmaail.com"
 }
 ###
-POST http://localhost:8080/v1/api/publisher/direct/student
+
+### FONOUT EXCHANGE
+POST http://localhost:8080/v1/api/publisher/fanout/student
 Content-Type: application/json
 
 {
-"name": "Daniela",
-"lastName": "Mendoza Mendoza",
-"email": "Dmendoza@gmail.com"
+  "name": "Daniela",
+  "lastName": "Mendoza Mendoza",
+  "email": "Dmendoza@gmail.com"
+}
+###TOPIC EXCHANGE
+
+POST http://localhost:8080/v1/api/publisher/topic/student
+Content-Type: application/json
+
+{
+  "name": "Nicolas",
+  "lastName": "Suarez",
+  "email": "NicolasSuarez@gmail.com"
 }
